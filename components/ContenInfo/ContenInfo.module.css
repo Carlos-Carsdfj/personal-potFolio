@@ -1,0 +1,44 @@
+.contentInfo p{
+    margin-left: 10px;
+  }
+  .contentInfo a{
+    box-shadow:   2px 2px 20px 1px  rgba(0, 0, 0, 0.6);       
+  
+    background: var(--quaternary-color);
+    border-radius: 10px;
+    padding:  0 5px;
+  }
+  
+  .contentInfo{
+   
+    font-size: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--quaternary-color2);
+    font-variant: initial;
+      /* -webkit-text-stroke: 1px var(--quaternary-color);   */
+    align-items:left;
+  
+    flex: 1 1 50px;
+    text-align: left;
+  
+  } 
+
+
+
+  
+@media all and (max-width: 1032px){
+
+    .contentInfo{
+        font-size: 35px;
+    }
+  
+  }
+  @media all and (max-width: 800px){
+   
+    .contentInfo{
+        font-size: 50px;
+    }
+  }

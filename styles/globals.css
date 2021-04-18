@@ -1,16 +1,65 @@
 html,
-body {
-  padding: 0;
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  /* background: rgb(7, 128, 241) ; */
+  font-family: 'Ubuntu', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+
+
+
+a{
+  text-decoration-line: none;
+  margin:0px;
+  color: white;
+
+}
+main div{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  padding:0;
 }
 
-* {
-  box-sizing: border-box;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 800px){
+ 
+  
+  main div{
+      justify-content: flex-start;
+      flex-direction: column;
+      height: 200vh;
+   
+     
+  }
+
+
+
 }
