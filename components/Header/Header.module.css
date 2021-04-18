@@ -7,6 +7,7 @@
     padding-right: 10px;
     font-family:'Muli';
     font-weight:900;
+    font-size: 30px;
  }
 
  .conNav{
@@ -44,23 +45,31 @@
     flex: 1 1 50px;
     margin:0px;
     text-align: center;
-  
- }
-
+    cursor: pointer;
+    
+   }
+   .itemList:active{
+      box-shadow:  inset -8px -10px 20px 1px  rgba(0, 0, 0, 0.6);
+      border-radius: 2px;
+   }
+   
 
  .containerHeader{
    display: flex;
    flex-flow: row wrap;
 }
+
+
+
 @media all and (max-width: 800px){
 
 
    .containerHeader{
-
        flex-flow: column wrap;
-
-
    }
+
+
+
 }
 
 

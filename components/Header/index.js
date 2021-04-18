@@ -1,6 +1,7 @@
+import Link from 'next/link'
 import styles from './Header.module.css'
 
-export default function HeaderWhitMenu({toHome ="", toProject="", toContac="", toAbout="", primary}){
+export default function HeaderWhitMenu({toHome ="/", toProject="", toContac="", toAbout="", primary}){
 
     const handlerEnterHome=()=>{
         primary({primary :'#0cb9c1',secondary:'#41afa5',tertiary:'#1cc7d0',quaternary:'#005670'})
@@ -27,10 +28,10 @@ export default function HeaderWhitMenu({toHome ="", toProject="", toContac="", t
                 
                 <nav className={styles.conNav}>
                     <ul className={styles.listNav}>
-                    <li className={styles.itemList} onMouseEnter={handlerEnterHome} ><a href={toHome} className={styles.homeNav}>Home</a></li>
-                    <li className={styles.itemList} onMouseEnter={handlerlEnterAbout}><a href={toAbout} className={styles.aboutNav}>About</a></li>
-                    <li className={styles.itemList} onMouseEnter={handlerEnterProject}><a href={toProject} className={styles.projectsNav}>Projects</a></li>
-                    <li className={styles.itemList} onMouseEnter={handlerEnterContac}><a href={toContac} className={styles.contacNav}>Contac</a></li>
+                    <Link href={toHome} className={styles.linkNav}><li className={styles.itemList} onMouseEnter={handlerEnterHome} ><a>Home</a></li></Link>
+                    <Link href={toAbout} className={styles.linkNav}><li className={styles.itemList} onMouseEnter={handlerlEnterAbout}><a>About</a></li></Link>
+                    <Link href={toProject} className={styles.linkNav}><li className={styles.itemList} onMouseEnter={handlerEnterProject}><a>Projects</a></li></Link>
+                    <Link href={toContac} className={styles.linkNav}><li className={styles.itemList} onMouseEnter={handlerEnterContac}><a>Contac</a></li></Link>
                     </ul>
                 </nav>
 
