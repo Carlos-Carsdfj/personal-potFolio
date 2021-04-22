@@ -1,9 +1,11 @@
 
-import HeadCopmponent from '../components/HeadComponent'
+
 import HeaderWhitMenu from '../components/Header'
 import ContenInfo from '../components/ContenInfo'
 import PhoneFigure from '../components/PhoneFigure'
 import useBackground from '../hooks/useBackground/useBackground'
+import Head from 'next/head'
+
 import { useEffect } from 'react'
 
 
@@ -25,40 +27,49 @@ export default function Home() {
     quaternaryColor,
     setQuatenaryColor} = useBackground()
 
+//      setPrimaryColor('#0cb9c1')
+    
+// setSecondaryColor('#41afa5')
+      
+// setTertiaryColor('#1cc7d0')
 
+// setQuatenaryColor('#005670')
+
+// const handlerEnterProject=()=>{
+    //     primary({primary :'#f9c74f',secondary:'#f8961e',tertiary:'#f3722c',quaternary:'#f94144'})
+    // }
+    // const handlerEnterContac=()=>{
+    //     primary({primary :'#FF5733',secondary:'#C70039',tertiary:'#900C3F',quaternary:'#581845'})
+    // }
 
     useEffect(() => {
-      setPrimaryColor('#0cb9c1')
+      setPrimaryColor('#ff5733')
     
-      setSecondaryColor('#41afa5')
+      setSecondaryColor('#c70039')
       
-      setTertiaryColor('#1cc7d0')
+      setTertiaryColor('#ac063c')
       
-      setQuatenaryColor('#005670')
+      setQuatenaryColor('#900c3f')
     
     }, [])
-  const turnColor=({primary,secondary,tertiary,quaternary})=>{
-
-    setPrimaryColor(primary)
-    
-    
-    setSecondaryColor(secondary)
-    
-    setTertiaryColor(tertiary)
-    
-    setQuatenaryColor(quaternary)
-
-  }
+ 
 
 
 
   
   return (
     <>
-      <HeadCopmponent></HeadCopmponent>
+    <Head>  
+        <title>Carlos|portfolio</title> 
+        <link rel="icon" href="/myIcon.svg" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"></link>
+        <meta name='viewport' content='width=device-width, initial-scale=1'></meta>
+    </Head>
+
     <body>
         <header>
-            <HeaderWhitMenu primary={turnColor}></HeaderWhitMenu>
+            <HeaderWhitMenu ></HeaderWhitMenu>
         </header>
         <main>
             <div>
@@ -71,6 +82,8 @@ export default function Home() {
 
     <style global jsx>{`
     
+
+
     body{
 
   
@@ -78,13 +91,14 @@ export default function Home() {
 --secondary-color: ${secondaryColor};
 --tertiary-color:   ${tertiaryColor};
 --quaternary-color:  ${quaternaryColor};
+
 --color-border: #d4dbdc;
 --color-display : linear-gradient(120deg, gray, white);
 --color-border2: #181719;
 background: 
-   linear-gradient(var(--primary-color), transparent),
+   linear-gradient(var(--color-display), transparent),
    linear-gradient(90deg, var(--secondary-color), transparent),
-   linear-gradient(-90deg, var(--quaternary-color), transparent);
+   linear-gradient(-90deg, var(--color-border2), transparent);
    
    transition: --primary-color 2s linear;
    transition: --secondary-color 2s linear;

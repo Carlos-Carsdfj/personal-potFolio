@@ -2,7 +2,7 @@ html,
 
 *{
   margin: 0;
-  padding: 0;
+  padding: 1px 1px;
   /* background: rgb(7, 128, 241) ; */
   font-family: 'Ubuntu', sans-serif;
 }
@@ -24,7 +24,7 @@ main div{
   flex-wrap: wrap;
   justify-content: center;
   height: 100vh;
-  padding:0;
+ 
 }
 
 
@@ -55,8 +55,8 @@ main div{
   main div{
       justify-content: flex-start;
       flex-direction: column;
-      height: 200vh;
-   
+      height: 100%;
+      padding-bottom:10px;
      
   }
 

@@ -1,14 +1,21 @@
 .contentInfo p{
     margin-left: 10px;
   }
-  .contentInfo a{
+  .projectsNav{
     box-shadow:   2px 2px 20px 1px  rgba(0, 0, 0, 0.6);       
   
-    background: var(--quaternary-color);
+    background: var(--tertiary-color);
     border-radius: 10px;
     padding:  0 5px;
   }
-  
+  .projectsNav:active{
+    color:black;
+
+  }
+
+  .projectsNav:hover{
+    opacity: 0.8;
+  }
   .contentInfo{
    
     font-size: 50px;
@@ -23,7 +30,7 @@
   
     flex: 1 1 50px;
     text-align: left;
-  
+ 
   } 
 
 
@@ -39,6 +46,11 @@
   @media all and (max-width: 800px){
    
     .contentInfo{
-        font-size: 50px;
+      display: block;
+        font-size: 30px;
+        padding: 0px;
+        height: 300px;
     }
+
+   
   }

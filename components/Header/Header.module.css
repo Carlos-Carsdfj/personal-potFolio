@@ -5,10 +5,11 @@
  .titleItem{
     flex: 1 1 50px;
     padding-right: 10px;
-    font-family:'Muli';
+    
     font-weight:900;
     font-size: 30px;
  }
+ 
 
  .conNav{
     flex: 1 1 50px;
@@ -21,7 +22,7 @@
     flex-direction: row;
     flex: 1 1 50px;
     list-style: none;
-    justify-content: stretch;
+    
     
 }
 .listNav li:first-child{
@@ -42,21 +43,41 @@
 
  .itemList{
     padding: 0px;
+    padding-bottom:5px ;
     flex: 1 1 50px;
-    margin:0px;
+    margin:0 2px;
     text-align: center;
     cursor: pointer;
-    
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+ 
+   }
+   .itemList a{
+      color:black;
+      font-weight: 900;
+   }
+   .itemList a:hover{
+      color:white;
+      font-weight: 900;
    }
    .itemList:active{
-      box-shadow:  inset -8px -10px 20px 1px  rgba(0, 0, 0, 0.6);
-      border-radius: 2px;
+      box-shadow:  inset -1px -1px 20px 1px  rgba(0, 0, 0, 0.6);
+      
    }
+   
    
 
  .containerHeader{
    display: flex;
    flex-flow: row wrap;
+}
+
+.headerDiv{
+
+   display: absolute;
+
+   margin-top:0;
+   width: 100%;
 }
 
 
@@ -68,7 +89,12 @@
        flex-flow: column wrap;
    }
 
-
+   .itemList{
+  
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+   
+     }
 
 }
 
