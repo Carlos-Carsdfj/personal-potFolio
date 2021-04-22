@@ -2,7 +2,7 @@ html,
 
 *{
   margin: 0;
-  padding: 1px 1px;
+  padding: 0 1px;
   /* background: rgb(7, 128, 241) ; */
   font-family: 'Ubuntu', sans-serif;
 }
