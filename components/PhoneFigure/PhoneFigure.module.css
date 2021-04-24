@@ -4,91 +4,79 @@
     z-index:7;
   }
 
-  .contentImage{
- 
-
-
-  }
-  
 
   
 
   .figureCircle{
     width: 500px;
     height: 500px;
-    background: #ff5733;
-    position: absolute;
-    z-index:6;
-    border-radius: 50%;
-    transform: skew(-28deg);
-
-  }
-  .figureCircle2{
-    width: 500px;
-    height: 500px;
-    background: #ff5733;
-    position: absolute;   
+    background: var( --tertiary-color);
+    
     z-index:5;
     border-radius: 50%;
-    transform: skew(28deg);
+    
 
   }
+
+    
+
+  .figureCircle2{
+    width: 450px;
+    height: 450px;
+    background: var(--primary-color);
+    margin:auto;  
+    z-index:6;
+    border-radius: 50%;
+    text-align: center;
+
+  }
+  .contentImage{
+
+    transform: skew(-20deg);
+    text-align: center;
+    font-size: 300px;
+    font-weight: 900;
+    margin:auto;
+    
+    
+  }
+
+
+  .figureIcons {
+    margin-top: 170px;
+    
+   
+  } 
+
+
  
 
 
 
-    
-.figureIcons {
-    margin-top: 300px;
-    margin-left:10px;
-    height:30px; 
-    width: 80px; 
-    z-index:20;
-  }
 
-
-  
-  .figureList {
-    
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    list-style:none;
-  
-  }
-  
-  .figureList li {
-    height: 60px;
-
-    margin: 0 20px;
-  }
-  .LinkA:hover{
-    
-    opacity: 0.8;
-  }
-  
-  .linkA:active{
-    
-  }
-  .linkA{
-
-    box-shadow: 5px 2px 20px 1px black;
-  }
  
   @media all and (max-width: 1140px){
 
     .figureCircle2{
-      width: 300px;
-      height: 300px;
+      width: 350px;
+      height: 350px;
      
     }
     .figureCircle{
-      width: 300px;
-      height: 300px;
+      width: 400px;
+      height: 400px;
+      
     
     }
  
+    .contentImage{
 
+      
+      
+      font-size: 250px;
+   
+      
+    }
    
      .figureIcons {
       margin-top: 170px;
@@ -96,17 +84,39 @@
      
     } 
 
-    .figureList li {
-      height: 60px;
-  
-      margin: 0 10px;
-    }
+ 
 
 
   }
-  @media all and (max-width: 803px){
+ 
+
+  @media all and (max-width: 935px){
+    .figureCircle2{
+      width: 220px;
+      height: 220px;
+     
+    }
+    .figureCircle{
+      width: 250px;
+      height: 250px;
+      
+    
+    }
+    .contentImage{
 
    
+      font-size: 150px;
+     
+      
+    }
+  }
+  @media all and (max-width: 860px){
+
+    .figureCircle{
+     margin-top: 10px;
+      
+    
+    }
   
     .figureList li {
       
@@ -117,6 +127,7 @@
     .contentFigure{
       height: 200px;
       width: 370px;
+      margin: 10px 20px
     }
 
     .figureIcons {
@@ -125,6 +136,27 @@
      
     } 
 
+    
+    .figureCircle2{
+      width: 350px;
+      height: 350px;
+     
+    }
+    .figureCircle{
+      width: 400px;
+      height: 400px;
+      
+    
+    }
+    
+    .contentImage{
+
+      
+      
+      font-size: 250px;
+   
+      
+    }
 
   }
   

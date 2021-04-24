@@ -2,14 +2,10 @@ html,
 
 *{
   margin: 0;
-  padding: 0 1px;
-  /* background: rgb(7, 128, 241) ; */
-  font-family: 'Ubuntu', sans-serif;
+  padding: 0 ;
+  
+  
 }
-
-
-
-
 
 a{
   text-decoration-line: none;
@@ -18,13 +14,11 @@ a{
 
 }
 main div{
-  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100vh;
- 
 }
 
 
@@ -49,7 +43,7 @@ main div{
 
 
 
-@media all and (max-width: 800px){
+@media all and (max-width: 890px){
  
   
   main div{
