@@ -15,8 +15,7 @@ export default function Home() {
 
   return (
     <>
- 
-
+    
         <BodyAndHead title='Carlos|Home'>
             <header>
                 <HeaderWhitMenu toAbout="AboutMe"></HeaderWhitMenu>
