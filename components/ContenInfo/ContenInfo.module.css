@@ -25,7 +25,7 @@
     justify-content: center;
     font-weight: bold;
     color: var(--quaternary-color2);
-    font-variant: initial;
+    /* font-variant: initial; */
       /* -webkit-text-stroke: 1px var(--quaternary-color);   */
     align-items:left;
   

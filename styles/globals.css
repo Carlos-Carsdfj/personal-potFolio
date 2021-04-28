@@ -7,13 +7,16 @@ html,
   
 }
 
+                        
 a{
   text-decoration-line: none;
   margin:0px;
   color: white;
 
 }
-main div{
+
+
+home-main div{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -21,38 +24,16 @@ main div{
   height: 100vh;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media all and (max-width: 890px){
- 
+
   
-  main div{
-      justify-content: flex-start;
-      flex-direction: column;
-      height: 100%;
-      padding-bottom:10px;
-     
-  }
+  home-main  div{
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 100%;
+        padding-bottom:10px;
+      
+    }
 
 
 

@@ -22,7 +22,7 @@ export default function BodyAndHead({children, title}){
     <style global jsx>{`
         
                 body{
-                    font-family: ${FONTFAMILY.BASE};
+                    /* font-family: ${FONTFAMILY.BASE}; */
                     --primary-color: ${COLORS.PRIMARY}; 
                     --secondary-color: ${COLORS.SECONDARY};
                     --tertiary-color:   ${COLORS.TERTIARY};
