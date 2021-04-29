@@ -10,7 +10,7 @@
 .textBox{
     display:flex;
     flex-direction: row;
-    background: var(--secondary-color);
+    background: rgb(211, 60, 14);
     border-radius: 24px;
     padding:20px;
     margin-left: 10px;

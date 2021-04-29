@@ -24,6 +24,11 @@
     list-style: none;
     
     
+    
+}
+
+.listNav li{
+   padding: 2px;
 }
 .listNav li:first-child{
   background: var(--primary-color);

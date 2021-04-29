@@ -31,12 +31,23 @@ export default function BodyAndHead({children, title}){
                     --color-border: ${COLORS.BORDER};
                     --color-display : ${COLORS.DISPLAY};
                     --color-border2: ${COLORS.BORDER2};
-                    background: 
+                    /* background: 
                     linear-gradient(var(--color-display), transparent),
                     linear-gradient(90deg, var(--secondary-color), transparent),
-                    linear-gradient(-90deg, var(--color-border2), transparent);
-                    margin: 0 10px;
+                    linear-gradient(-90deg, var(--color-border2), transparent); */
+                    background-image: 
+                    radial-gradient(${COLORS.TERTIARY}33 1px, transparent 1px),
+                    radial-gradient(${COLORS.TERTIARY}33 1px, transparent 1px);
+                    background-position: 0 0, 25px 25px;
+                    background-size: 50px 50px;    
+                    padding: 0;
+                    margin: 0 0px; 
+
                 }
+                     @media all and (max-width: 860px){
+                        body{margin:0 0;}
+
+                     }
                 
         `}</style>
 

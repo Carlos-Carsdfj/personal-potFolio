@@ -1,7 +1,7 @@
 .contentFigure{
     align-items: center;
     flex: 1 1 50px;
-    z-index:7;
+    z-index:5;
   }
 
 
@@ -12,7 +12,7 @@
     height: 500px;
     background: var( --tertiary-color);
     padding: 10px;
-    z-index:5;
+    
     border-radius: 50%;
     
 
@@ -25,7 +25,7 @@
     height: 450px;
     background: var(--primary-color);
     margin:auto;  
-    z-index:6;
+    
     border-radius: 50%;
     text-align: center;
 
@@ -42,11 +42,6 @@
   }
 
 
-  .figureIcons {
-    margin-top: 170px;
-    
-   
-  } 
 
 
  
@@ -78,11 +73,7 @@
       
     }
    
-     .figureIcons {
-      margin-top: 170px;
-      margin-left:0px;
-     
-    } 
+   
 
  
 
@@ -118,23 +109,15 @@
     
     }
   
-    .figureList li {
-      
-      
-      margin: 0 5px;
-    }
+   
 
     .contentFigure{
       height: 200px;
       width: 370px;
-      margin: 0px 0px
+      margin: auto
     }
 
-    .figureIcons {
-      margin-top: 220px;
-      margin-left:2px;
-     
-    } 
+ 
 
     
     .figureCircle2{
