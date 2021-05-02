@@ -4,7 +4,7 @@ import styles from './styles.module.css'
 import Skills from '../../components/Skills'
 import TextBox from '../../components/TextBox'
 import HeaderNavigation from '../../components/HeaderNavigation'
-
+import MessageAboutME from '../../components/MessageAboutMe'
 
 export default function AboutMe(){
 
@@ -14,10 +14,7 @@ export default function AboutMe(){
         <header>
         <HeaderNavigation></HeaderNavigation>
         </header>
-        <main className={styles.contentMain}>
-                <TextBox></TextBox>
-                <Skills></Skills>
-        </main>
+        <MessageAboutME></MessageAboutME>
     </BodyAndHead>
  </>)
 

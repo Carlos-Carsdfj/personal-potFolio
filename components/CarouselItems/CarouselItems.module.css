@@ -1,0 +1,16 @@
+.contentCarousel{
+    display: absolute;
+   grid-column: 2 / span 6 ;
+   grid-row: 4/span 3;
+   justify-self: center;
+   padding: 0;
+   
+   border: 1px solid black;
+   background: blueviolet;
+   
+   margin: 0px;
+   width: 500px;
+   height: 300px;
+   
+   
+}

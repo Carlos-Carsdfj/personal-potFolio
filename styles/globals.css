@@ -3,7 +3,7 @@ html,
 *{
   margin: 0;
   padding: 0 ;
-  
+  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
 
@@ -21,7 +21,7 @@ home-main div{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-
+  align-items: center;
   height: 100vh;
   
 }
@@ -57,6 +57,7 @@ header{
   
   home-main  div{
         justify-content: flex-start;
+        align-items: center;
         flex-direction: column;
         height: 100%;
         padding-bottom:10px;

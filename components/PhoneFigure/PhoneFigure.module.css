@@ -17,6 +17,10 @@
     
 
   }
+  .ImgSvg{
+    height: 260px;
+    width: 500px;
+  }
 
     
 
@@ -30,15 +34,13 @@
     text-align: center;
 
   }
-  .contentImage{
+ 
 
-    transform: skew(-20deg);
-    text-align: center;
-    font-size: 300px;
-    font-weight: 900;
-    margin:auto;
-    
-    
+  .contentImages{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-right: 20px;
   }
 
 
@@ -100,8 +102,11 @@
      
       
     }
+    .ImgSvg{
+      margin:auto;
+    }
   }
-  @media all and (max-width: 860px){
+  @media all and (max-width: 890px){
 
     .figureCircle{
      margin-top: 10px;
@@ -109,7 +114,11 @@
     
     }
   
+    .contentImages{
    
+      margin-right: auto;
+      margin-left: auto;
+    }
 
     .contentFigure{
       height: 200px;
@@ -132,13 +141,13 @@
     
     }
     
-    .contentImage{
+   .contentImages{
+     margin-top: 10px;
+   }
 
-      
-      
-      font-size: 200px;
-   
-      
+    .ImgSvg{
+      height: auto;
+      width: 300px;
     }
 
   }

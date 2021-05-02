@@ -115,6 +115,11 @@
   "resolved" "https://registry.npmjs.org/@opentelemetry/context-base/-/context-base-0.14.0.tgz"
   "version" "0.14.0"
 
+"@popperjs/core@^2.9.1":
+  "integrity" "sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q=="
+  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.9.2.tgz"
+  "version" "2.9.2"
+
 "@types/node@*":
   "integrity" "sha512-dueRKfaJL4RTtSa7bWeTK1M+VH+Gns73oCgzvYfHZywRCoPSd8EkXBL0mZ9unPTveBn+D9phZBaxuzpwjWkW0g=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-14.14.41.tgz"
@@ -231,6 +236,11 @@
   "integrity" "sha512-D7iWRBvnZE8ecXiLj/9wbxH7Tk79fAh8IHaTNq1RWRixsS02W+5qS+iE9yq6RYl0asXx5tw0bLhmT5pIfbSquw=="
   "resolved" "https://registry.npmjs.org/bn.js/-/bn.js-5.2.0.tgz"
   "version" "5.2.0"
+
+"bootstrap@^5.0.0-beta3":
+  "integrity" "sha512-0urccjfIOzhrb9qJysN8XW/DRw6rg3zH7qLeKIp4Zyl8+Ens4JWB0NC0cB5AhnSFPd2tftRggjwCMxablo6Tpg=="
+  "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.0.0-beta3.tgz"
+  "version" "5.0.0-beta3"
 
 "braces@~3.0.2":
   "integrity" "sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A=="

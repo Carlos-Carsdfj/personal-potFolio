@@ -18,11 +18,11 @@ const variants = {
   }
 };
 
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
 
-export const MenuItem = ({ i,icon,title, Navref }) => {
-  const style = { border: `2px solid ${colors[i]}` };
+
+export const MenuItem = ({icon,title, Navref }) => {
+  
   return (<>
     <motion.li
       variants={variants}
@@ -50,6 +50,12 @@ export const MenuItem = ({ i,icon,title, Navref }) => {
               
        
         }
+        a {
+          text-decoration-line: none;
+          margin:0px;
+          color: white;
+        }
+        
         .icons {
           width:200px;
           display:flex;

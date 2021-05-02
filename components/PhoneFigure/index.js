@@ -1,12 +1,12 @@
 import styles from './PhoneFigure.module.css'
 import { motion } from 'framer-motion'
-
+import Skills from '../Skills'
 
 export default function PhoneFigure({linkGit="",linkTwitter="", linkIn="",}){
 
    
-    return(<>
-            <motion.div 
+    return(<div className={styles.contentImages}>
+            <motion.img 
             initial={{ scale: 0 }}
             animate={{  scale: 1 }}
             transition={{
@@ -14,17 +14,15 @@ export default function PhoneFigure({linkGit="",linkTwitter="", linkIn="",}){
                 stiffness: 260,
                 damping: 20
             }}
-            className={styles.contentFigure}> 
-                <div className={styles.figureCircle}>
-                    <div className={styles.figureCircle2}>
-                        <h2 className={styles.contentImage}> FJ</h2>
-                    </div>
-                </div>
-    
             
-            </motion.div>
+            className={styles.ImgSvg} src="/pc.svg">
+
+           
             
-    </>)
+            </motion.img>
+            <Skills></Skills>
+            
+    </div>)
 
 
 }

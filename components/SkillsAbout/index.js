@@ -1,4 +1,4 @@
-import styles from './Skills.module.css'
+import styles from './SkillsAbout.module.css'
 import {SKILLS} from '../../configData'
 import { motion } from "framer-motion";
 
@@ -15,7 +15,7 @@ export default function Skills(){
           opacity: 1,
           scale: 1,
           transition: {
-            delayChildren: 1.5,
+            delayChildren: 1,
             staggerChildren: 0.5
           }
         }
@@ -35,6 +35,7 @@ export default function Skills(){
             initial="hidden"
             animate="visible" 
         className={styles.contentSkills}>
+            
             { SKILLS.map(({url},index)=>{
                 return(
                     <motion.div key={index}                    
