@@ -7,7 +7,12 @@ html,
   
 }
 
-                        
+/* body{
+  background-image: url("/wareBack.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+}                         */
 a{
   text-decoration-line: none;
   margin:0px;

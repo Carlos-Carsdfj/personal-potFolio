@@ -1,0 +1,88 @@
+
+
+
+
+  
+
+      
+.figureIcons {
+  
+  height:30px; 
+
+  width: auto; 
+  margin-top: 5px;
+  z-index:5;
+
+}
+
+.imgLogo{
+ 
+  margin-bottom: 0px;
+}
+
+.figureList {
+  
+  display: flex;
+  flex-direction: row;
+  list-style:none;
+  justify-content: center;
+  width: auto;
+
+}
+
+.figureList li {
+  height: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.LinkA:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+.LinkA{
+ 
+  display:inline-block;
+  margin: 0;
+}
+
+
+
+@media all and (max-width: 1032px){
+
+
+  
+.figureList li {
+  height: 60px;
+  
+  transform: scale(1);
+  
+}
+
+}
+
+
+  @media all and (max-width: 804px){
+ 
+    .figureList li {
+      
+      margin-right: auto;
+      margin-left: auto;
+
+     
+      
+    }
+
+   .figureIcons{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+   }
+
+   .imgClass{
+    
+    width:30px;
+     height:30px;
+  }
+  }

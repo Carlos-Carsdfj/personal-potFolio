@@ -1,6 +1,6 @@
 import styles from './MessageAboutME.module.css'
 import { motion } from 'framer-motion'
-import {MESSAGES} from '../../configData'
+import {MESSAGES, IMAGES} from '../../configData'
 import SkillAbout from '../../components/SkillsAbout'
 export default function MessageAboutME(){
 
@@ -21,7 +21,13 @@ return(<>
                 damping: 40
             }}
         className={styles.textItem}>
-            {MESSAGES.map((text, index)=><p key={index}>{text}</p>)}
+            {MESSAGES.map((text, index)=><motion.p  initial={{ x: -1000 }}
+            animate={{  x: 0 }}
+            transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 40
+            }} key={index}>{text}</motion.p>)}
         </motion.div>
 
          <motion.img 
@@ -32,9 +38,9 @@ return(<>
                 stiffness: 260,
                 damping: 20
             }} className={styles.imgAbout}
-             src="/aboutPerson.svg" >
+             src={IMAGES.imgPerson} >
 
-             </motion.img >
+             </motion.img>
         
         
         <SkillAbout></SkillAbout>

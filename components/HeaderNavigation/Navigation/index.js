@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { MenuItem } from "../MenuItem";
+import {NAVEGATIONICON} from "../../../configData"
+
 const variants = {
   open: {
     transition: { staggerChildren: 0.07, delayChildren: 0.2 },
@@ -12,18 +14,13 @@ const variants = {
   }
 };
 
-const navegations = [{icon:'/homeIcon.svg',title:'Home',iColor:2, ref:'/'},
-{icon:'/aboutIcon.svg',title:'About Me',iColor:3, ref:'/AboutMe'},
-{icon:'/projectsIcon.svg',title:'Projects',iColor:3, ref:'/Projects'},
-{icon:'/contactIcon.svg',title:'Contact Me',iColor:3, ref:'/Contact'}
 
 
 
-]
 export const Navigation = () => ( <>
   <motion.ul className="navigation" variants={variants}>
-    {navegations.map((nav,index) => (
-      <MenuItem i={nav.iColor} title={nav.title} icon={nav.icon} key={index} Navref={nav.ref} />
+    {NAVEGATIONICON.map((nav,index) => (
+      <MenuItem title={nav.title} icon={nav.icon} key={index} Navref={nav.ref} />
       ))}
   </motion.ul>
 

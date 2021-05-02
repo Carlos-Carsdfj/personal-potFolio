@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
-import { MenuToggle } from "../MenuToggle";
-import { Navigation } from "../Navigation";
+import { MenuToggle } from "./MenuToggle";
+import { Navigation } from "./Navigation";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -24,10 +24,7 @@ const sidebar = {
     }
   }
 };
-/**  --primary-color: ${COLORS.PRIMARY}; 
-                    --secondary-color: ${COLORS.SECONDARY};
-                    --tertiary-color:   ${COLORS.TERTIARY};
-                    --quaternary-color: */
+
 
 export default function HeaderNavigation(){
   const [isOpen, toggleOpen] = useCycle(false, true);

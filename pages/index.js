@@ -1,9 +1,8 @@
 
 
-import HeaderWhitMenu from '../components/Header'
+
 import ContenInfo from '../components/ContenInfo'
-import PhoneFigure from '../components/PhoneFigure'
-import WaveBackground from '../components/WaveBackground'
+import ImageLogo from '../components/ImageLogo'
 import { URLS, TEXTINFO} from '../configData'
 import BodyAndHead from '../components/BodyAndHead'
 import HeaderNavigation from '../components/HeaderNavigation'
@@ -21,8 +20,8 @@ export default function Home() {
                     <header>
                       <HeaderNavigation></HeaderNavigation>
                     </header>
-                    <ContenInfo textInLiner={TEXTINFO} linkGit={URLS.GIT} linkTwitter={URLS.TWITTER} linkIn={URLS.LINKEDIN} ></ContenInfo>
-                    <PhoneFigure  ></PhoneFigure>
+                    <ContenInfo ></ContenInfo>
+                    <ImageLogo  ></ImageLogo>
                 </div>
             </main>
     
