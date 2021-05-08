@@ -15,8 +15,8 @@ export default function Skills(){
           opacity: 1,
           scale: 1,
           transition: {
-            delayChildren: 1.5,
-            staggerChildren: 0.5
+            delayChildren: 1,
+            staggerChildren: 0.3
           }
         }
       };

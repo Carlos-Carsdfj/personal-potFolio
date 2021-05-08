@@ -1,18 +1,4 @@
 
-.skill{
-    display: flex;
-    flex-direction: row;
-    width: 80px;
-    height: 80px;  
-   text-align: right;
-   align-content: flex-end;
-   justify-content: flex-end;
-    padding: 2px;
-    margin: auto;
-    align-self: flex-start;
-    border-radius: 20px;
-    padding: 0px;
-}
 
 .skillIcon{
     border-radius: 20px;
@@ -30,6 +16,7 @@
     padding-left: 0px; 
     height: 80px;
     margin-right: 0px;
+    justify-content: space-around;
     align-content: flex-start;
     grid-column: 2 / span 7 ;
     grid-row: 4 /span 3;
@@ -48,10 +35,7 @@
 
 }
 @media all and (max-width: 690px){
-    .contentSkills{
-        grid-column: 9 / span 3 ;
-        grid-row: 1 /span 3;
-    }
+   
    
 }
 @media all and (max-width: 600px){
@@ -64,6 +48,7 @@
     .skillIcon{
         width: 40px;
         height: 40px;
+        margin-bottom: 10px;
         
     }
 

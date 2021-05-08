@@ -14,7 +14,7 @@ export const TEXTINFO = [  'Hi, Im Carlos Ferreira ',   'a web developer', ' who
 
 export const SKILLS =[
   {url :'/JsIcon.svg' , title:'Javascript'},
-  {url :'/NextIcon.svg' , title:'Next.js'},
+  {url :'/nextjs-icon.svg' , title:'Next.js'},
   {url :'/NodeIcon.svg' , title:'Node.js'},
   {url :'/bootstrapIcon.svg' , title:'Bootstrap'},
   {url :'/springIcon.svg' , title:'Spring Boot'},
