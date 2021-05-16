@@ -49,14 +49,49 @@
 
 
 
+@media all and (min-width: 1700px){
+     
+  .figureIcons {
+  
+    height:80px; 
+  
+    width: auto; 
+    margin-top: 5px;
+    z-index:5;
+  
+  }
+  
+.imgLogo{
+ 
+  height: 80px;
+  width: 80px;
+}
+  .imgLogo{
+   
+    margin-bottom: 0px;
+  }
+  
+  .figureList {
+    
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+    justify-content: center;
+    width: auto;
+  
+  }
+  
+
+}
 @media all and (max-width: 1032px){
 
 
   
+  
 .figureList li {
   height: 60px;
   
-  transform: scale(1);
+  
   
 }
 
@@ -65,10 +100,12 @@
 
   @media all and (max-width: 804px){
  
+    .figureList{
+      width: 100%;
+    }
     .figureList li {
       
-      margin-right: auto;
-      margin-left: auto;
+      margin: 0 15px;
 
      
       
@@ -80,9 +117,5 @@
     margin-bottom: 20px;
    }
 
-   .imgClass{
-    
-    width:30px;
-     height:30px;
-  }
+
   }

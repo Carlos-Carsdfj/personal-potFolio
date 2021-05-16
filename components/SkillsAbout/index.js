@@ -16,7 +16,7 @@ export default function Skills(){
           scale: 1,
           transition: {
             delayChildren: 1,
-            staggerChildren: 0.5
+            staggerChildren: 0.3
           }
         }
       };
@@ -38,11 +38,12 @@ export default function Skills(){
             
             { SKILLS.map(({url},index)=>{
                 return(
-                    <motion.div key={index}                    
+                    <motion.img key={index}                    
                     variants={item}
-                        className={styles.skill}>                        
-                        <img src={url} className={styles.skillIcon}></img>
-                    </motion.div>
+                        
+                        src={url} className={styles.skillIcon}>                        
+                        
+                    </motion.img>
                 )
             })
 

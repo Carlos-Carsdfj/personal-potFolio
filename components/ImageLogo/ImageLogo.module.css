@@ -1,46 +1,22 @@
-.contentFigure{
-    align-items: center;
-    flex: 1 1 50px;
-    z-index:5;
-  }
-
 
   
 
-  .figureCircle{
-    width: 500px;
-    height: 500px;
-    background: var( --tertiary-color);
-    padding: 10px;
-    
-    border-radius: 50%;
-    
-
-  }
+  
   .ImgSvg{
-    height: 260px;
-    width: 500px;
+   width: 100%;
   }
 
     
 
-  .figureCircle2{
-    width: 450px;
-    height: 450px;
-    background: var(--primary-color);
-    margin:auto;  
-    
-    border-radius: 50%;
-    text-align: center;
-
-  }
  
 
   .contentImages{
     display:flex;
     flex-flow: column wrap;
     justify-content: center;
-    margin-right: 20px;
+    z-index:5;
+    flex: 1 1 100px;
+    
   }
 
 
@@ -54,18 +30,7 @@
  
   @media all and (max-width: 1140px){
 
-    .figureCircle2{
-      width: 350px;
-      height: 350px;
-     
-    }
-    .figureCircle{
-      width: 400px;
-      height: 400px;
-      
-    
-    }
- 
+  
     .contentImage{
 
       
@@ -84,17 +49,7 @@
  
 
   @media all and (max-width: 960px){
-    .figureCircle2{
-      width: 220px;
-      height: 220px;
-     
-    }
-    .figureCircle{
-      width: 250px;
-      height: 250px;
-      
-    
-    }
+   
     .contentImage{
 
    
@@ -102,52 +57,50 @@
      
       
     }
+
+    .contentImages{
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 10px;
+    }
+
+   
+ 
+
+  
+    
+   
+
+    .ImgSvg{
+      height: auto;
+      width: 75%;
+    }
     .ImgSvg{
       margin:auto;
     }
   }
   @media all and (max-width: 890px){
 
-    .figureCircle{
-     margin-top: 10px;
-      
-    
-    }
+ 
   
     .contentImages{
-   
+      width: 100%;
       margin-right: auto;
       margin-left: auto;
+      margin-top: 10px;
     }
 
-    .contentFigure{
-      height: 200px;
-      width: 370px;
-      margin: auto
-    }
-
+   
  
 
+  
     
-    .figureCircle2{
-      width: 290px;
-      height: 290px;
-     
-    }
-    .figureCircle{
-      width: 310px;
-      height: 310px;
-      
-    
-    }
-    
-   .contentImages{
-     margin-top: 10px;
-   }
+   
 
     .ImgSvg{
       height: auto;
-      width: 300px;
+      width: 75%;
     }
 
   }
