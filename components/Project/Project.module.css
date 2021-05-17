@@ -5,10 +5,10 @@
 
 }
 .btn{
-    background: var(--secondary-color);
+    background: #eee;
     opacity: 0.8;
     color:white;
-    padding: 0 5px;
+    padding: 0 20px;
     font-size: 16px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -17,6 +17,11 @@
     transition: transform .25s;
     
 
+  }
+
+  .logoGit{
+    width: 20px;
+    height: auto;
   }
   .btn:hover{
 
@@ -40,9 +45,9 @@
   }
   .modal{
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
     border-radius: 10px;
 
       background: rgb(0,0,0,0.5);

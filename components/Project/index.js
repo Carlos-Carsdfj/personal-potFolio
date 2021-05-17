@@ -24,7 +24,8 @@ export default function Projacts({project}){
              <div onMouseOver={handlerEnter} onMouseOut={handlerLeave} className={styles.imgContent}>
             <img  src={project.imgDesk} className={styles.imgS} alt={`image from app ${project.name}`}></img>
             <div className={styles.modal} style={display}>
-            <a href={project.repository} target="_blank"><button className={styles.btn}>see code</button></a>
+            <a href={project.site} target="_blank"><button className={styles.btn}><img className={styles.logoGit} src='/webSite.svg'/></button></a>
+            <a href={project.repository} target="_blank"><button className={styles.btn}><img className={styles.logoGit} src='/githubLogo.svg'/></button></a>
             </div>
             </div> 
               
