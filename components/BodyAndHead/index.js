@@ -22,7 +22,7 @@ export default function BodyAndHead({children, title}){
     <style global jsx>{`
         
                 body{
-                    /* font-family: ${FONTFAMILY.BASE}; */
+                    
                     --primary-color: ${COLORS.PRIMARY}; 
                     --secondary-color: ${COLORS.SECONDARY};
                     --tertiary-color:   ${COLORS.TERTIARY};
@@ -43,12 +43,13 @@ export default function BodyAndHead({children, title}){
                     
                     padding: 0;
                     margin: 0 0px; 
-
+                    height:100vh;
+                
                 }
-                     @media all and (max-width: 860px){
+                     /* @media all and (max-width: 860px){
                         body{margin:0 0;}
 
-                     }
+                     } */
                 
         `}</style>
 

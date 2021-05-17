@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import styles from './MenuToggle.module.css'
 const Path = props => (
   <motion.path
     fill="transparent"
@@ -11,7 +11,7 @@ const Path = props => (
 );
 
 export const MenuToggle = ({ toggle }) => (
-  <button onClick={toggle}>
+  <button className={styles.btn} onClick={toggle}>
     <svg width="23" height="23" viewBox="0 0 23 23" >
       <Path
       stroke= "#ffffff"

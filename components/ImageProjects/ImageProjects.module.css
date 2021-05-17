@@ -1,0 +1,50 @@
+.contentImages{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  
+}
+.imgDeveloper{
+    width: 400px;
+    height: auto;
+}
+.textContent{
+    width: 700px;
+    height: auto;
+   
+}
+.text{
+ font-size: 30px;
+ text-align: center;
+}
+
+@media all and (min-width: 1500px){
+  .imgDeveloper{
+    width: 600px;
+    height: auto;
+}
+}
+@media all and (max-width: 600px){
+
+  .contentImages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .textContent{
+    width: 90%;
+    
+   
+}
+.text{
+  font-size: 16px;
+  text-align: center;
+ }
+ 
+    
+}

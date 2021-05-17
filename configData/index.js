@@ -26,9 +26,13 @@ export const MESSAGES =[
     'My skills include between javascript, css and html. the library  and framworks that I understand are React.js, Node.js, Next.js, Spring Boot and Bootstrap'
     ]
 
+export const PROJECTMSG = ' Here I show you some of the projects that I am currently carrying out I am constantly doing more content to expand my knowledge'
+
  export const  IMAGES = {
      imgPC:'/pc.svg',
-     imgPerson:'/aboutPerson.svg'
+     imgPerson:'/aboutPerson.svg',
+     imgDeveloper:'/programador.svg',
+     imgDeveloper2:'/programador2.svg'
  }
  
  export const ICONS ={
