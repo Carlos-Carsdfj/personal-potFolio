@@ -1,7 +1,6 @@
 
 import styles from './ContenInfo.module.css'
 import Link from 'next/link'
-import Followmee from '../../Followmee'
 import { motion } from 'framer-motion'
 import {ICONS,TEXTINFO} from '../../../configData'
 

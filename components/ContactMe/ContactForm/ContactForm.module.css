@@ -1,0 +1,44 @@
+.contentTexts{
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 80%;
+max-width: 400px;
+height: 75%;
+}
+
+.formContent{
+
+
+    font-size: 40px;
+    padding: 10px;
+    background: rgb(255, 115, 0);
+
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    border-radius: 10px;
+    box-shadow:  0 10px 25px rgba(0, 0, 0, .3);
+    height: 100%;
+    align-items: center;
+    color: white;
+
+
+}
+.formContent textarea{
+    resize: none;
+    height: 90%;
+    margin-top: 10px;
+}
+.formContent button{
+    padding: 0 30px;
+    cursor:pointer;
+    background: rgba(245, 24, 98, 0.993);
+    color: white;
+    text-decoration: none;
+    box-shadow:  0 10px 25px rgba(0, 0, 0, .3);
+    border:none;
+    border: 1px solid black;
+}
+ 

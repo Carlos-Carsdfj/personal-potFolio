@@ -297,6 +297,22 @@
   "resolved" "https://registry.npmjs.org/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.4.1.tgz"
   "version" "0.4.1"
 
+"@formspree/core@^2.6.1":
+  "integrity" "sha512-cbaNhWQ4BFZWosh1Oa4pKD3CWAK3sn+nK3D1UQj6hO1O+AUH502OabKo5+ugC/P2+d4YZLadIY3mC11Ig4kEzA=="
+  "resolved" "https://registry.npmjs.org/@formspree/core/-/core-2.6.2.tgz"
+  "version" "2.6.2"
+  dependencies:
+    "@types/promise-polyfill" "^6.0.3"
+    "fetch-ponyfill" "^6.1.0"
+    "promise-polyfill" "^8.1.3"
+
+"@formspree/react@^2.2.3":
+  "integrity" "sha512-paiDNr0lsf3XwNiV8SrYQGXdSN471c9boFLesqxM01VimCgA0MwZbyo46cDxWO7ZML6FsuKUOvdjnRguSHFkow=="
+  "resolved" "https://registry.npmjs.org/@formspree/react/-/react-2.2.3.tgz"
+  "version" "2.2.3"
+  dependencies:
+    "@formspree/core" "^2.6.1"
+
 "@google-cloud/common@^3.6.0":
   "integrity" "sha512-aHIFTqJZmeTNO9md8XxV+ywuvXF3xBm5WNmgWeeCK+XN5X+kGW0WEX94wGwj+/MdOnrVf4dL2RvSIt9J5yJG6Q=="
   "resolved" "https://registry.npmjs.org/@google-cloud/common/-/common-3.6.0.tgz"
@@ -583,6 +599,11 @@
   "integrity" "sha512-dueRKfaJL4RTtSa7bWeTK1M+VH+Gns73oCgzvYfHZywRCoPSd8EkXBL0mZ9unPTveBn+D9phZBaxuzpwjWkW0g=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-14.14.41.tgz"
   "version" "14.14.41"
+
+"@types/promise-polyfill@^6.0.3":
+  "integrity" "sha512-f/BFgF9a+cgsMseC7rpv9+9TAE3YNjhfYrtwCo/pIeCDDfQtE6PY0b5bao2eIIEpZCBUy8Y5ToXd4ObjPSJuFw=="
+  "resolved" "https://registry.npmjs.org/@types/promise-polyfill/-/promise-polyfill-6.0.3.tgz"
+  "version" "6.0.3"
 
 "@types/qs@*":
   "integrity" "sha512-0/HnwIfW4ki2D8L8c9GVcG5I72s9jP5GSLVF0VIXDW00kmIpA6O33G7a8n59Tmh7Nz0WUC3rSb7PTY/sdW2JzA=="
@@ -1369,6 +1390,13 @@
   "version" "0.11.3"
   dependencies:
     "websocket-driver" ">=0.5.1"
+
+"fetch-ponyfill@^6.1.0":
+  "integrity" "sha512-rWLgTr5A44/XhvCQPYj0X9Tc+cjUaHofSM4lcwjc9MavD5lkjIhJ+h8JQlavPlTIgDpwhuRozaIykBvX9ItaSA=="
+  "resolved" "https://registry.npmjs.org/fetch-ponyfill/-/fetch-ponyfill-6.1.1.tgz"
+  "version" "6.1.1"
+  dependencies:
+    "node-fetch" "~2.6.0"
 
 "fill-range@^7.0.1":
   "integrity" "sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ=="
@@ -2263,7 +2291,7 @@
     "vm-browserify" "1.1.2"
     "watchpack" "2.1.1"
 
-"node-fetch@^2.3.0", "node-fetch@^2.6.1", "node-fetch@2.6.1":
+"node-fetch@^2.3.0", "node-fetch@^2.6.1", "node-fetch@~2.6.0", "node-fetch@2.6.1":
   "integrity" "sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw=="
   "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.1.tgz"
   "version" "2.6.1"
@@ -2507,7 +2535,7 @@
   "resolved" "https://registry.npmjs.org/process/-/process-0.11.10.tgz"
   "version" "0.11.10"
 
-"promise-polyfill@8.1.3":
+"promise-polyfill@^8.1.3", "promise-polyfill@8.1.3":
   "integrity" "sha512-MG5r82wBzh7pSKDRa9y+vllNHz3e3d4CNj1PQE4BQYxLme0gKYYBm9YENq+UkEikyZ0XbiGWxYlVw3Rl9O/U8g=="
   "resolved" "https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-8.1.3.tgz"
   "version" "8.1.3"

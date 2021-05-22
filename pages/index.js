@@ -1,19 +1,21 @@
 
 import dynamic from 'next/dynamic'
 import useNearScreen from '../hooks/useNearScreen'
-import useNear2 from '../hooks/useNearScrenn2'
+
 import Footer from '../components/Footer'
 import HomeContent from '../components/HomeContent'
 import BodyAndHead from '../components/BodyAndHead'
-
+import ContactForm from '../components/ContactMe/index.js'
 import AboutContent from '../components/AboutContent'
 import MenuNav from '../components/MenuNav'
+
 export default function Home() {
 
 
 
-  const {isNearScreen, fromRef} = useNearScreen()
-  const near  = useNear2()
+  const near1 = useNearScreen()
+  const near2  = useNearScreen()
+  const near3 = useNearScreen()
 
   const ProjectContent =
  
@@ -46,10 +48,10 @@ export default function Home() {
                      
                   <div className='span-separate'/>
                   
-                  <div className="aboutme-div" ref={fromRef}>
+                  <div className="aboutme-div" ref={near1.fromRef}>
                     <a name="aboutme"/>
                  
-                  { isNearScreen && <AboutContent></AboutContent> }
+                  { near1.isNearScreen && <AboutContent></AboutContent> }
                   
                   
                   
@@ -61,9 +63,16 @@ export default function Home() {
                   <div className='span-separate'/>
 
 
-                  <div className='project-div' ref={near.fromRef}>
+                  <div className='project-div' ref={near2.fromRef}>
                     <a name="projects"/>
-                  { near.isNearScreen && <ProjectContent></ProjectContent> }
+                  { near2.isNearScreen && <ProjectContent></ProjectContent> }
+
+                      
+                  </div>
+            
+                  <div className='contact-div' ref={near3.fromRef}>
+                  <a name='ContactMe'/>
+                  { near3.isNearScreen && <ContactForm></ContactForm> }
 
                       
                   </div>

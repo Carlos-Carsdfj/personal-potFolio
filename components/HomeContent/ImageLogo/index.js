@@ -1,7 +1,6 @@
 import styles from './ImageLogo.module.css'
 import { motion } from 'framer-motion'
 import {IMAGES} from '../../../configData'
-import Skills from '../Skills'
 
 export default function ImageLogo(){
 

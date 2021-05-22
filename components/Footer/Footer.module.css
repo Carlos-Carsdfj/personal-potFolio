@@ -1,9 +1,10 @@
 .footerContent{
 
-    width: 100%;
+    width: auto;
     background: var(--primary-color);
     padding: 10px;
     display: flex;
+   
     flex-direction:row ;
     justify-content: space-between;
     align-items: center;
