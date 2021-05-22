@@ -26,10 +26,10 @@
     height: auto;
 }
 }
-@media all and (max-width: 600px){
+@media all and (max-width: 800px){
 
   .contentImages{
-    display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;

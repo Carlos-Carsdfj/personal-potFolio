@@ -1,7 +1,7 @@
 
 import {useState} from 'react'
 import styles from './Project.module.css'
-import {LGSOCIAL,URLS} from '../../configData'
+import {LGSOCIAL,URLS} from '../../../configData'
 
 
 

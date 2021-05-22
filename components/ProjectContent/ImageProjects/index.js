@@ -1,4 +1,4 @@
-import {PROJECTMSG, IMAGES} from '../../configData'
+import {PROJECTMSG, IMAGES} from '../../../configData'
 import styles from './ImageProjects.module.css'
 import { motion } from 'framer-motion'
 
@@ -33,7 +33,7 @@ export default function ImageProjects(){
 
 
         <motion.p 
-            initial={{ x: +1000 }}
+            initial={{ x: -10 }}
             animate={{  x: 0 }}
             transition={{
                 type: "spring",

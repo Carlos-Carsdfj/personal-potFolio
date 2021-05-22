@@ -1,6 +1,6 @@
 import styles from './ImageLogo.module.css'
 import { motion } from 'framer-motion'
-import {IMAGES} from '../../configData'
+import {IMAGES} from '../../../configData'
 import Skills from '../Skills'
 
 export default function ImageLogo(){
@@ -21,9 +21,9 @@ export default function ImageLogo(){
             initial='hidden'
             animate='visible'
             transition='transition'         
-            className={styles.ImgSvg} src={IMAGES.imgPC}>
+            className={styles.ImgSvg} src={IMAGES.imgPerson}>
             </motion.img>
-            <Skills></Skills>
+          
             
     </div>)
 

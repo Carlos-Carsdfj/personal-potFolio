@@ -5,19 +5,30 @@
   
 
       
-.figureIcons {
+.content {
   
-  height:30px; 
+  height:100px; 
 
   width: auto; 
   margin-top: 5px;
-  z-index:5;
+
+  
+
+}
+.content p{
+
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
 
 }
 
 .imgLogo{
  
   margin-bottom: 0px;
+  height: 50px;
+  width: auto;
+
 }
 
 .figureList {
@@ -27,11 +38,12 @@
   list-style:none;
   justify-content: center;
   width: auto;
+  
 
 }
 
 .figureList li {
-  height: 80px;
+  height: 100%;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -51,13 +63,13 @@
 
 @media all and (min-width: 1700px){
      
-  .figureIcons {
+  .content {
   
     height:80px; 
   
     width: auto; 
     margin-top: 5px;
-    z-index:5;
+    
   
   }
   
@@ -111,7 +123,7 @@
       
     }
 
-   .figureIcons{
+   .content{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;

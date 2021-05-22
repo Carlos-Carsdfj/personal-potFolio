@@ -13,7 +13,7 @@ export default function Followmee(){
       }
 
     return(<>
-              <motion.div className={styles.figureIcons}
+              <motion.div className={styles.content}
             variants={item}>
                         
                     <ul className={styles.figureList}>
@@ -21,6 +21,7 @@ export default function Followmee(){
                         <li><a className={styles.LinkA} href={URLS.GIT} target="_blank"><img className={styles.imgLogo} src={LGSOCIAL.github}/></a></li>
                         <li><a className={styles.LinkA} href={URLS.LINKEDIN} target="_blank"><img className={styles.imgLogo} src={LGSOCIAL.linkedin}/></a></li>
                     </ul>
+                    <p>Follow Me</p>
                 </motion.div>
             
     </>)

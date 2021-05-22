@@ -1,67 +1,82 @@
 
-
-
-import ContenInfo from '../components/ContenInfo'
-import ImageLogo from '../components/ImageLogo'
-import { URLS, TEXTINFO} from '../configData'
+import dynamic from 'next/dynamic'
+import useNearScreen from '../hooks/useNearScreen'
+import useNear2 from '../hooks/useNearScrenn2'
+import Footer from '../components/Footer'
+import HomeContent from '../components/HomeContent'
 import BodyAndHead from '../components/BodyAndHead'
-import HeaderNavigation from '../components/HeaderNavigation'
 
+import AboutContent from '../components/AboutContent'
+import MenuNav from '../components/MenuNav'
 export default function Home() {
 
 
+
+  const {isNearScreen, fromRef} = useNearScreen()
+  const near  = useNear2()
+
+  const ProjectContent =
+ 
+  dynamic(
+    () => import('../components/ProjectContent'),
+    { loading: () => '' }
+  )
+  // const AboutContent =
+  // dynamic(
+  //   () => import('../components/AboutContent'),
+  //   { loading: () => '' }
+  // )
+
+  
+ 
 //<WaveBackground></WaveBackground>
   return (
     <>
     
-        <BodyAndHead title='Carlos|Home'>
-            <main className="home-main">
-                <div>
-                    <header>
-                      <HeaderNavigation></HeaderNavigation>
-                    </header>
-                    <ContenInfo ></ContenInfo>
-                    <ImageLogo  ></ImageLogo>
-                </div>
-            </main>
-    
+       
+                     
+                  <MenuNav ></MenuNav>
+                        
+              <main >
+                  <a name="welcome"/>
+                  <div className="home-div">
+                  <HomeContent></HomeContent>
+                  </div>
+
+                     
+                  <div className='span-separate'/>
+                  
+                  <div className="aboutme-div" ref={fromRef}>
+                    <a name="aboutme"/>
+                 
+                  { isNearScreen && <AboutContent></AboutContent> }
+                  
+                  
+                  
+
+                  </div>
+
+                  
+
+                  <div className='span-separate'/>
+
+
+                  <div className='project-div' ref={near.fromRef}>
+                    <a name="projects"/>
+                  { near.isNearScreen && <ProjectContent></ProjectContent> }
+
+                      
+                  </div>
+            
+              </main>
+
+              <footer>
+              <Footer></Footer>
+
+              </footer>
          
-        </BodyAndHead>
 
-        <style global jsx>{`
-
-                            
-a{
-  text-decoration-line: none;
-  margin:0px;
-  color: white;
-
-}
-
-
-main div{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  height: 100vh;
-}
-
-@media all and (max-width: 890px){
-
-  
-    main div{
-        justify-content: flex-start;
-        flex-direction: column;
-        height: 100%;
-        padding-bottom:10px;
-      
-    }
-
-
-
-}
-`}</style>
+        <BodyAndHead title='Carsd-Fj|Potfolio'></BodyAndHead>
     
     </>
   )

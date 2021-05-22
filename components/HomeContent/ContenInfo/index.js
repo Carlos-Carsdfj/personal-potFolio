@@ -1,11 +1,11 @@
 
 import styles from './ContenInfo.module.css'
 import Link from 'next/link'
-import Followmee from '../Followmee'
+import Followmee from '../../Followmee'
 import { motion } from 'framer-motion'
-import {ICONS,TEXTINFO,URLS} from '../../configData'
+import {ICONS,TEXTINFO} from '../../../configData'
 
-const textDefault = ['do you should', 'put something', 'here for show right?']
+
 
 export default function ContenInfo(){
 
@@ -40,10 +40,10 @@ export default function ContenInfo(){
              className={styles.contentInfo}> 
       
                 {TEXTINFO.map((text, index)=><motion.p  variants={item} key={index}>{text}</motion.p>)}
-                <motion.p variants={item} >see some of my work : <Link href='/Projects'><a><img className={styles.imgClass} src ={ICONS.folder} /></a></Link></motion.p> 
+                <motion.p variants={item} >see some of my work : <Link href='#projects'><a><img className={styles.imgClass} src ={ICONS.folder} /></a></Link></motion.p> 
             
             
-                <Followmee></Followmee>
+               
             </motion.div>
 
     </>)

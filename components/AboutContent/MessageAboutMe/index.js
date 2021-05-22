@@ -1,15 +1,23 @@
 import styles from './MessageAboutME.module.css'
 import { motion } from 'framer-motion'
-import {MESSAGES, IMAGES} from '../../configData'
-import SkillAbout from '../../components/SkillsAbout'
+import {MESSAGES, IMAGES} from '../../../configData'
+import Skills from '../SkillsAbout'
 export default function MessageAboutME(){
 
 
-
+    const variantLogo={
+        hidden:{scale:0},
+        visible:{scale:1},
+        transition:{
+            type: "spring",
+            stiffness: 260,
+            damping: 50
+        }
+    }
 
 return(<>
 
-    <main className={styles.mainContent}>
+    <div className={styles.mainContent}>
 
      
         <motion.div 
@@ -21,7 +29,7 @@ return(<>
                 damping: 40
             }}
         className={styles.textItem}>
-            {MESSAGES.map((text, index)=><motion.p  initial={{ x: -1000 }}
+            {MESSAGES.map((text, index)=><motion.p className={styles.item} initial={{ x: -1000 }}
             animate={{  x: 0 }}
             transition={{
                 type: "spring",
@@ -31,22 +39,20 @@ return(<>
         </motion.div>
 
          <motion.img 
-            initial={{ scale: 0 }}
-            animate={{  scale: 1 }}
-            transition={{
-                type: "spring",
-                stiffness: 260,
-                damping: 20
-            }} className={styles.imgAbout}
-             src={IMAGES.imgPerson} >
+         variants={variantLogo}
+            initial='hidden'
+            animate='visible'
+            transition='transition'  
+             className={styles.imgAbout}
+             src={IMAGES.imgPC} >
 
              </motion.img>
         
+             <Skills></Skills>
         
-        <SkillAbout></SkillAbout>
         
 
     
-    </main>
+    </div>
 </>)
 }

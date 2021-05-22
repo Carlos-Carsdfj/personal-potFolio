@@ -3,7 +3,8 @@
 
   
   .ImgSvg{
-   width: 100%;
+   height: 500px;
+   margin-bottom: 0;
   }
 
     
@@ -50,19 +51,14 @@
 
   @media all and (max-width: 960px){
    
-    .contentImage{
-
-   
-      font-size: 150px;
-     
-      
-    }
+    
+    
 
     .contentImages{
       width: 100%;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 10px;
+      height: auto;
+    padding: 0;
+     
     }
 
    
@@ -73,35 +69,38 @@
    
 
     .ImgSvg{
-      height: auto;
-      width: 75%;
-    }
-    .ImgSvg{
-      margin:auto;
+      
+      
+      margin-bottom: 0;
+      margin-left:auto ;
+      margin-right:auto ;
+      margin-top:0 ;
     }
   }
   @media all and (max-width: 890px){
-
- 
-  
+    
+    
+    
     .contentImages{
       width: 100%;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 10px;
+      padding-top: 2px;
+     justify-content: flex-start;
     }
 
    
- 
-
-  
     
-   
 
+    
+    
     .ImgSvg{
       height: auto;
-      width: 75%;
+      width: 90%;
+      max-width: 400px;
     }
+      
 
+    
+    
   }
+ 
   

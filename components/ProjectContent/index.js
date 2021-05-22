@@ -1,5 +1,5 @@
-import Projects from '../Projects'
-import ImageProjects from '../ImageProjects'
+import Projects from './Projects2'
+import ImageProjects from './ImageProjects'
 import styles from './ProjectContent.module.css'
 
 export default function ProjectContent(){
@@ -10,10 +10,13 @@ export default function ProjectContent(){
     return(<>
 
 
-   
-        <ImageProjects></ImageProjects>
+  
+                    
+        
+       <ImageProjects></ImageProjects>
         <Projects ></Projects>
 
+    
 
 
     </>)

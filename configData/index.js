@@ -41,10 +41,9 @@ export const PROJECTMSG = ' Here I show you some of the projects that I am curre
    
  }
  export const NAVEGATIONICON = [
-    {icon:'/homeIcon.svg', title:'Home', ref:'/'},
-    {icon:'/aboutIcon.svg', title:'About Me', ref:'/AboutMe'},
-    {icon:'/projectsIcon.svg', title:'Projects', ref:'/Projects'},
-    {icon:'/contactIcon.svg', title:'Contact Me', ref:'/ContactMe'}
+    {icon:'/homeIcon.svg', title:'Home', ref:'#welcome'},
+    {icon:'/aboutIcon.svg', title:'About Me', ref:'#aboutme'},
+    {icon:'/projectsIcon.svg', title:'Projects', ref:'#projects'}
 
  ]
 

@@ -1,5 +1,5 @@
-import styles from './SkillsAbout.module.css'
-import {SKILLS} from '../../configData'
+import styles from './Skills.module.css'
+import {SKILLS} from '../../../configData'
 import { motion } from "framer-motion";
 
 
@@ -35,15 +35,13 @@ export default function Skills(){
             initial="hidden"
             animate="visible" 
         className={styles.contentSkills}>
-            
             { SKILLS.map(({url},index)=>{
                 return(
-                    <motion.img key={index}                    
+                    <motion.div key={index}                    
                     variants={item}
-                        
-                        src={url} className={styles.skillIcon}>                        
-                        
-                    </motion.img>
+                        className={styles.skill}>                        
+                        <img src={url} className={styles.skillIcon}></img>
+                    </motion.div>
                 )
             })
 

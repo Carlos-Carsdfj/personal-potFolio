@@ -70,10 +70,13 @@
   @media all and (max-width: 804px){
    
     .contentInfo{
-      
+
+      justify-content: flex-end;
         font-size: 30px;
+        
+        
         padding: 0px;
-        margin-bottom: 30px;
+     
 
     }
   
