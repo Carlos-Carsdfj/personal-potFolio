@@ -8,7 +8,7 @@ import BodyAndHead from '../components/BodyAndHead'
 import ContactForm from '../components/ContactMe/index.js'
 import AboutContent from '../components/AboutContent'
 import MenuNav from '../components/MenuNav'
-
+import ProjectContent from '../components/ProjectContent'
 export default function Home() {
 
 
@@ -17,17 +17,7 @@ export default function Home() {
   const near2  = useNearScreen()
   const near3 = useNearScreen()
 
-  const ProjectContent =
- 
-  dynamic(
-    () => import('../components/ProjectContent'),
-    { loading: () => '' }
-  )
-  // const AboutContent =
-  // dynamic(
-  //   () => import('../components/AboutContent'),
-  //   { loading: () => '' }
-  // )
+  
 
   
  
@@ -69,7 +59,8 @@ export default function Home() {
 
                       
                   </div>
-            
+                  <div className='span-separate'/>
+
                   <div className='contact-div' ref={near3.fromRef}>
                   <a name='ContactMe'/>
                   { near3.isNearScreen && <ContactForm></ContactForm> }
