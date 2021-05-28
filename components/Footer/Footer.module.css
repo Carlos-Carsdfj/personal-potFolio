@@ -1,9 +1,14 @@
 .footerContent{
 
-    width: 100%;
-    background: #eee;
+    width: auto;
+    background: var(--primary-color);
+    padding: 10px;
     display: flex;
+   
     flex-direction:row ;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    color:white ;
+    margin-bottom: 0;
+    margin-top: 50px;
 }

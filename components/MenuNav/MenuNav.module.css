@@ -1,0 +1,44 @@
+.menuContent{
+    position:fixed;
+    background: var(--primary-color);
+    z-index: 500;
+  
+    right:0px;
+    top:0px;
+    /* border-top-left-radius: 5px; */
+    border-bottom-left-radius: 30px;
+    padding: 0 10px;
+    
+   }
+   
+.btnLinks{
+    margin: 0 20px;
+    }   
+
+.btnLinks:hover{
+    
+   opacity: 0.5;
+  
+   
+  }
+.btnLinks:active{
+  
+    color:black;
+  }
+
+
+   @media all and (max-width: 850px){
+
+    .menuContent{
+        position:fixed;
+       
+      
+       
+       font-size: 20px; 
+        
+        
+       }
+    
+    
+    
+   }

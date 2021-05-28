@@ -13,9 +13,9 @@ export default function BodyAndHead({children, title}){
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"></link>
         <meta name='viewport' content='width=device-width, initial-scale=1'></meta>
     </Head>
-    <body>
-        {children}
-    </body>
+   
+       
+    
 
 
 
@@ -42,10 +42,11 @@ export default function BodyAndHead({children, title}){
                     background-size: 50px 50px;     */
                     
                     padding: 0;
-                    margin: 0 0px; 
-                    height:100vh;
-                
+                    margin:0; 
+                    
+                   
                 }
+
                      /* @media all and (max-width: 860px){
                         body{margin:0 0;}
 

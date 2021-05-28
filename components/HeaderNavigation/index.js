@@ -37,6 +37,7 @@ export default function HeaderNavigation(){
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
+      className=" contentMenu"
     >
       <motion.div className=" background" variants={sidebar} />
       <Navigation  />
@@ -45,6 +46,15 @@ export default function HeaderNavigation(){
 
 <style global jsx>{`
    
+    .contentMenu{
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: auto;
+      background:transparent;
+      z-index:10;
+    }
     .background {
       position: absolute;
       top: 0;
