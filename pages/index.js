@@ -1,5 +1,5 @@
 
-import dynamic from 'next/dynamic'
+
 import useNearScreen from '../hooks/useNearScreen'
 
 import Footer from '../components/Footer'
@@ -21,7 +21,7 @@ export default function Home() {
 
   
  
-//<WaveBackground></WaveBackground>
+
   return (
     <>
     
