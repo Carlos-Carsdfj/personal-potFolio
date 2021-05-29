@@ -13,7 +13,7 @@ export default function useNearScreen ({ distance = '0px' } = {} ) {
             const el = entries[0]
             if (el.isIntersecting) {
 
-                console.log('esta muestra')
+              
                 setShow(true)
 
                observer.disconnect()

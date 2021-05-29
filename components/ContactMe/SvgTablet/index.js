@@ -19,7 +19,7 @@ function SvgComponent(props) {
       y={0}
       viewBox="0 0 612 382"
       xmlSpace="preserve"
-      {...props}
+      
     >
       <style>
         {

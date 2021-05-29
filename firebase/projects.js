@@ -26,7 +26,7 @@ var firebaseConfig = {
     const projects = []
     const snapshot = await docRef.get()
     snapshot.forEach((doc) => {
-    console.log(doc.id, '=>', doc.data())
+    
     projects.push(doc.data())
 
 
