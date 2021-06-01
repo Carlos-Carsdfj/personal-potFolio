@@ -8,16 +8,22 @@
     /* border-top-left-radius: 5px; */
     border-bottom-left-radius: 30px;
     padding: 0 10px;
+    padding-top:5px; 
     
    }
    
 .btnLinks{
     margin: 0 20px;
     }   
+   
+.btnLinks img{
+    width: 30px;
+    height: 30px;
+    }   
 
-.btnLinks:hover{
+.btnLinks img:hover{
     
-   opacity: 0.5;
+  transform: scale(1.1);
   
    
   }
