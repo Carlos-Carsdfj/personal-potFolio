@@ -9,8 +9,6 @@ export const URLS = {
 
 }
 
-export const TEXTINFO = [  'Hi, Im Carlos Ferreira ',   'a web developer', ' who loves what he does' ]
-
 
 export const SKILLS =[
   {url :'/JsIcon.svg' , title:'Javascript'},
@@ -20,13 +18,6 @@ export const SKILLS =[
   {url :'/springIcon.svg' , title:'Spring Boot'},
   {url :'/ReactIcon.svg' , title:'React.js'}]
 
-export const MESSAGES =[
-    'Hi, welcome',
-    'I am Carlos Ferreira and I am a web developer and I am a person committed to my work, I am usually very organized and always ready for new challenges. I always seek to learn more, and if there is something I do not know, I look for solutions and learn',
-    'My skills include between javascript, css and html. the library  and framworks that I understand are React.js, Node.js, Next.js, Spring Boot and Bootstrap'
-    ]
-
-export const PROJECTMSG = ' Here I show you some of the projects that I am currently carrying out I am constantly doing more content to expand my knowledge'
 
  export const  IMAGES = {
      imgPC:'/pc.svg',
@@ -37,7 +28,9 @@ export const PROJECTMSG = ' Here I show you some of the projects that I am curre
  
  export const ICONS ={
  
-     folder:'/folderIcon.svg'
+     folder:'/folderIcon.svg',
+     spainFlag:'/spainFlag.svg',
+     usFlag:'/folderIcon.svg'
    
  }
  export const NAVEGATIONICON = [
