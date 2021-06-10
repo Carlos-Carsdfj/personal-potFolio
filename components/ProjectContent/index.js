@@ -1,4 +1,4 @@
-import Projects from './Projects2'
+import Projects from './Projects'
 import ImageProjects from './ImageProjects'
 
 
@@ -8,4 +8,5 @@ export default function ProjectContent(){
        <ImageProjects></ImageProjects>
         <Projects ></Projects>
     </>)
+    
 }

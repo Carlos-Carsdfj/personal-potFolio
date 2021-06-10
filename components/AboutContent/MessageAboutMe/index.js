@@ -1,9 +1,12 @@
 import styles from './MessageAboutME.module.css'
 import { motion } from 'framer-motion'
-import {MESSAGES, IMAGES} from '../../../configData'
+import { IMAGES} from '../../../configData'
+import useTranslation from "next-translate/useTranslation";
+
 import Skills from '../SkillsAbout'
 export default function MessageAboutME(){
 
+    let { t } = useTranslation();
 
     const variantLogo={
         hidden:{scale:0},
@@ -29,13 +32,13 @@ return(<>
                 damping: 40
             }}
         className={styles.textItem}>
-            {MESSAGES.map((text, index)=><motion.p className={styles.item} initial={{ x: -1000 }}
+            <motion.p className={styles.item} initial={{ x: -1000 }}
             animate={{  x: 0 }}
             transition={{
                 type: "spring",
                 stiffness: 260,
                 damping: 40
-            }} key={index}>{text}</motion.p>)}
+            }} >{t("about:textinfo")}</motion.p>
         </motion.div>
 
          <motion.img 

@@ -1,9 +1,9 @@
-import {PROJECTMSG, IMAGES} from '../../../configData'
+import { IMAGES} from '../../../configData'
 import styles from './ImageProjects.module.css'
 import { motion } from 'framer-motion'
-
+import useTranslation from "next-translate/useTranslation";
 export default function ImageProjects(){
-
+    let {t} = useTranslation()
     const variantLogo={
         hidden:{scale:0},
         visible:{scale:1},
@@ -38,7 +38,7 @@ export default function ImageProjects(){
             transition={{
                 type: "spring",
                 stiffness: 260,
-                damping: 40}} className={styles.text}>{PROJECTMSG}</motion.p>
+                damping: 40}} className={styles.text}>{t('projects:textinfo')}</motion.p>
         </div>
     </div>)
 }

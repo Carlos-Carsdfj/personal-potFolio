@@ -3,11 +3,17 @@ import styles from './ContenInfo.module.css'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import {ICONS,TEXTINFO} from '../../../configData'
+import useTranslation from "next-translate/useTranslation";
+import { useContext, useState, useEffect } from 'react'
+// import Context from '../../../context/LangContext'
 
 
 
 export default function ContenInfo(){
-
+  let { t } = useTranslation();
+    // const {welcome,languages } = useContext(Context) 
+   
+  
     const container = {
         hidden: { opacity: 1, x:-20  },
         visible: {
@@ -28,8 +34,8 @@ export default function ContenInfo(){
         }
       }
 
-
-
+      
+      const textinfo = t("home:textinfo")
 
     return(<>
              <motion.div 
@@ -38,8 +44,8 @@ export default function ContenInfo(){
              animate='visible'
              className={styles.contentInfo}> 
       
-                {TEXTINFO.map((text, index)=><motion.p  variants={item} key={index}>{text}</motion.p>)}
-                <motion.p variants={item} >see some of my work : <Link href='#projects'><a><img className={styles.imgClass} src ={ICONS.folder} /></a></Link></motion.p> 
+               <motion.p  variants={item} >{textinfo}</motion.p>
+                <motion.p variants={item} >{ t("home:seeProjec") } : <Link href='#projects'><a><img className={styles.imgClass} src ={ICONS.folder} /></a></Link></motion.p> 
             
             
                
