@@ -25,7 +25,7 @@ var firebaseConfig = {
     
     const docRef = db.collection('projects')
 
-  export function beAnony(){
+  export const  beAnony =()=>{
 
 
       return firebase.auth().signInAnonymously()
