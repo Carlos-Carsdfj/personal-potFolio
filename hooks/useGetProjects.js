@@ -12,7 +12,7 @@ export default function useGetProjects(){
         setLoading(true)
         getDatabase()
         .then(projects =>{
-
+            
             setProjects(projects)
             setLoading(false)
         }

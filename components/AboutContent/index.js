@@ -10,7 +10,7 @@ export default function AboutContent(){
 
     <div >
 
-   <MessageAboutME ></MessageAboutME>
+        <MessageAboutME ></MessageAboutME>
        
     </div>
 

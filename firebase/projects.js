@@ -11,20 +11,45 @@ var firebaseConfig = {
     appId: "1:1092577789765:web:c2846e8439317b71e0202c"
   }
   try {
-    firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig)
+    beAnony()
+    
+
   } catch (err) {
     if (!/already exists/.test(err.message)) {
-      console.error('Firebase initialization error', err.stack);
+      console.error('Firebase initialization error', err.stack)
     }
   }
     const db = firebase.firestore()
     
     const docRef = db.collection('projects')
 
+  function beAnony(){
+
+
+      return firebase.auth().signInAnonymously()
+      .then(() => {
+          const isAnony = true
+        return isAnony
+      })
+      .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log('ERROR Code:',errorCode)
+        console.log('ERROR Message:',errorMessage)
+      });
+   
+   
+   
+   }
+   
+   
   export const  getDatabase = async ()=>{
 
+    
     const projects = []
     const snapshot = await docRef.get()
+
     snapshot.forEach((doc) => {
     
     projects.push(doc.data())
