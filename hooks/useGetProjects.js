@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import {getDatabase} from '../firebase/projects'
+import {getDatabase,beAnony} from '../firebase/projects'
 
 
 export default function useGetProjects(){
@@ -10,9 +10,11 @@ export default function useGetProjects(){
     useEffect(() => {
         
         setLoading(true)
+        beAnony()
+        .then()
         getDatabase()
         .then(projects =>{
-
+            
             setProjects(projects)
             setLoading(false)
         }

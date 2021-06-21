@@ -48,22 +48,22 @@ export default function Home() {
                   
                   </div>                    
                   <div className='span-separate'/>                
+                    <a id="aboutme"/>             
                   <div className="aboutme-div" ref={near1.fromRef}>
-                    <a name="aboutme"/>             
 
                   { near1.isNearScreen && <AboutContent></AboutContent> }
 
                   </div>
                   <div className='span-separate'/>
+                    <a id="projects"/>
                   <div className='project-div' ref={near2.fromRef}>
-                    <a name="projects"/>
                   { near2.isNearScreen && <ProjectContent></ProjectContent> }                  
                   </div>
 
             <div className='span-separate'/>
 
+              <a id='ContactMe'/>
             <div className='contact-div' ref={near3.fromRef}>
-              <a name='ContactMe'/>
               { near3.isNearScreen && <ContactForm></ContactForm> }                   
             </div>          
           </main>
