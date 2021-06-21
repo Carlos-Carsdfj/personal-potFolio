@@ -12,7 +12,8 @@ var firebaseConfig = {
   }
   try {
     firebase.initializeApp(firebaseConfig)
-    beAnony()
+    
+    
     
 
   } catch (err) {
@@ -24,7 +25,7 @@ var firebaseConfig = {
     
     const docRef = db.collection('projects')
 
-  function beAnony(){
+  export function beAnony(){
 
 
       return firebase.auth().signInAnonymously()

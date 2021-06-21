@@ -10,19 +10,23 @@ export default function useGetProjects(){
     useEffect(() => {
         
         setLoading(true)
-        getDatabase()
-        .then(projects =>{
-            
-            setProjects(projects)
-            setLoading(false)
-        }
+        beAnony()
+        .then(
 
+            getDatabase()
+            .then(projects =>{
+                
+                setProjects(projects)
+                setLoading(false)
+            }
+    
+            )
+            .catch(error=>{
+                setLoading(false)
+    
+                console.log(error)
+            })
         )
-        .catch(error=>{
-            setLoading(false)
-
-            console.log(error)
-        })
         
         
     }, [setProjects])
