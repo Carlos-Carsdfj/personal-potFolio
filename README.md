@@ -3,7 +3,7 @@
 Portafolio personal realizado con el fin de darme a presentar de una forma mas personalizada
 
 
-###Tecnologías
+### Tecnologías
 
 - **Lenguaje**: Javascript (con extensiones de lenguaje jsx, recomendado para usar con React)
 - 
